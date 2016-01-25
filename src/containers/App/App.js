@@ -75,7 +75,7 @@ export default class App extends Component {
           </Navbar.Collapse>
         </Navbar>
 
-        <Grid>
+        <Grid fluid>
           <Row>
             <Col>
               {this.props.children}
