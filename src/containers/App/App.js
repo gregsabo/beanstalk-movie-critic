@@ -7,6 +7,7 @@ import { isLoaded as isAuthLoaded, load as loadAuth, logout } from 'redux/module
 import { pushState } from 'redux-router';
 import connectData from 'helpers/connectData';
 import config from '../../config';
+import { Grid, Row, Col } from 'react-bootstrap';
 
 function fetchData(getState, dispatch) {
   const promises = [];
@@ -74,9 +75,13 @@ export default class App extends Component {
           </Navbar.Collapse>
         </Navbar>
 
-        <div>
-          {this.props.children}
-        </div>
+        <Grid>
+          <Row>
+            <Col>
+              {this.props.children}
+            </Col>
+          </Row>
+        </Grid>
       </div>
     );
   }

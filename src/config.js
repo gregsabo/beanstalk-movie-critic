@@ -15,17 +15,17 @@ module.exports = Object.assign({
   apiHost: process.env.APIHOST || 'localhost',
   apiPort: process.env.APIPORT,
   app: {
-    title: 'Redux Decagon',
+    title: 'Movie Critic',
     description: 'All the modern best practices in one example.',
     head: {
-      titleTemplate: 'Redux Decagon: %s',
+      titleTemplate: 'Movie Critic: %s',
       meta: [
         {name: 'description', content: 'All the modern best practices in one example.'},
         {charset: 'utf-8'},
-        {property: 'og:site_name', content: 'Redux Decagon'},
+        {property: 'og:site_name', content: 'Movie Critic'},
         {property: 'og:image', content: 'https://react-redux.herokuapp.com/logo.jpg'},
         {property: 'og:locale', content: 'en_US'},
-        {property: 'og:title', content: 'Redux Decagon'},
+        {property: 'og:title', content: 'Movie Critic'},
         {property: 'og:description', content: 'A starting point for new apps.'},
         {property: 'og:card', content: 'summary'},
         {property: 'og:site', content: '@gregsabo'},
