@@ -22,6 +22,8 @@ module.exports = Object.assign({
       meta: [
         {name: 'description', content: 'All the modern best practices in one example.'},
         {name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'},
+        {name: 'apple-mobile-web-app-capable', content: 'yes'},
+        {name: 'apple-mobile-web-app-status-bar-style', content: 'black'},
         {charset: 'utf-8'},
         {property: 'og:site_name', content: 'Movie Critic'},
         {property: 'og:image', content: 'https://react-redux.herokuapp.com/logo.jpg'},
