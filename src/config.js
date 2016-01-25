@@ -21,6 +21,7 @@ module.exports = Object.assign({
       titleTemplate: 'Movie Critic: %s',
       meta: [
         {name: 'description', content: 'All the modern best practices in one example.'},
+        {name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'},
         {charset: 'utf-8'},
         {property: 'og:site_name', content: 'Movie Critic'},
         {property: 'og:image', content: 'https://react-redux.herokuapp.com/logo.jpg'},
@@ -34,7 +35,7 @@ module.exports = Object.assign({
         {property: 'og:description', content: 'A starting point for new apps.'},
         {property: 'og:image', content: 'https://react-redux.herokuapp.com/logo.jpg'},
         {property: 'og:image:width', content: '200'},
-        {property: 'og:image:height', content: '200'}
+        {property: 'og:image:height', content: '200'},
       ]
     }
   },
