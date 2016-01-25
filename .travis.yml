@@ -1,18 +1,21 @@
 language: node_js
-
 node_js:
-  - "0.12"
-  - "4.0"
-  - "4"
-  - "stable"
-
+- '0.12'
+- '4.0'
+- '4'
+- stable
 sudo: false
-
 before_script:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
-
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
 script:
-  - npm run lint
-  - npm test
-  - npm run test-node
+- npm run lint
+- npm test
+- npm run test-node
+deploy:
+  provider: heroku
+  api_key:
+    secure: gAenmNYisjn6wOztaQb/NMKusOiWY07qjV/VcJuYKlxSFjK7/+Up1b6qLZt1uzv0wk5zTZ16w6xqxgsEeIDYbdjvYIIPgI3HjKqL7H0CWmEQERrpudMNMW8OjCeRY2JdSEt96Tv0+50/YUWAEL3KUWk1B3JPJZ9wYU4ANawMKHcfRUupWmQfmrG0yvKbXLJ5lcJD5zbK9E30Gf7rP4z9MDou2dQnOQplZIKI/xMhLAlLL087V0MZFpCZHgwAcju/Q/4uS67Za2cDdNOEsMn7KxK6uG7+tH78o745+FdcsgxLreCrSUn41pvxWBbnl1RvVaiOU6/WgvkP/WN/MYGI7QiEJnoM+2Im/mX2PFUODkF1UjEBdBLc58rqOe15T9fGJiGfhjKkPjdGipFh8xw2+6lht0jwdUEXHlZyOG2T6K8x2nTEFcTY/LG7agCYZejLMIlWWIfmk+PadmHAi8JfeCJieLOkSFDzfS/6E1/vfByMgsYailiXw5/WLFV3gnF/K3FlPAe6wfnvHHyBqrFAP1wIWmDNMox1WTt5nMDVqqN2Ede/YcZBF0tZCk+dHfoOcRNE5P/pDtgQBkEj2D48UDaegCcKOx4POZabC0MO8mPRBt/bGCG3besvp+gSVwtoQyld+MVOVFjO/0vIOHvTGdt08Clq2Expwg0pmE+xFXs=
+  app: beanstalk-movie-critic
+  on:
+    repo: gregsabo/beanstalk-movie-critic
