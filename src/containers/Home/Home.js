@@ -26,11 +26,14 @@ export default class Home extends Component {
         <p>What is your favorite movie?</p>
         <form onSubmit={event => {
           event.preventDefault();
+          if (!movieNameField.value) {
+            return;
+          }
           this.props.submitMovie(movieNameField.value);
           this.props.dispatch(pushState(null, 'critic'));
         }}>
           <Input type="text" label="Movie Name" {...movieNameField} />
-          <ButtonInput type="submit" bsStyle="primary" />
+          <ButtonInput type="submit" bsStyle="primary" disabled={!movieNameField.value} />
         </form>
       </div>
     );
