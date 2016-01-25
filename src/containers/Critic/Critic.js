@@ -10,7 +10,6 @@ export default class Critic extends Component {
   }
 
   render() {
-    console.log('trying to render critic', this.props.movieName);
     return (
       <div>
         <h1>Your judgement:</h1>

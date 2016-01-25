@@ -77,7 +77,7 @@ export default class App extends Component {
 
         <Grid fluid>
           <Row>
-            <Col>
+            <Col xs={12}>
               {this.props.children}
             </Col>
           </Row>
