@@ -36,7 +36,10 @@ module.exports = Object.assign({
         {property: 'og:image', content: 'https://react-redux.herokuapp.com/logo.jpg'},
         {property: 'og:image:width', content: '200'},
         {property: 'og:image:height', content: '200'},
-      ]
+      ],
+      link: [
+        {'rel': 'apple-touch-startup-image', 'href': '/startup.png'}
+      ],
     }
   },
 
